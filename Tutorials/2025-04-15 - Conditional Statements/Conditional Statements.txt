@@ -1,0 +1,39 @@
+Conditional Statements
+========================================
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/login.php.
+
+Step 4. For the first test step, in the Command field, enter the `open` command. In the Target field, enter "login.php".
+
+Step 5. In the next test step, in the Command field, enter the `store text` command. In the Target field, enter "xpath=//*[@id="signInForm"]/h1". In the Value field, enter "val".
+  - This stores the "Welcome, Login In" that's in the h1 element (located in <form id="signInForm"</form>) to a variable named val
+
+Step 6. In a new test step: Command = `if`. Target = `${val}==="Welcome, Login In"`.
+  - If the val variable is exactly equal to: Welcome, Login In
+
+Step 7. New test step: Command = `echo`. Target = "Correct Verification".
+
+Step 8. New test step: Command = `else if`. Target = `${val}==="Welcome, Register"`.
+
+Step 9. New test step: Command =`echo`. Target = "Incorrect Verification".
+
+Step 10. New test step: Command =`else`.
+
+Step 11. New test step: Command =`echo`. Target = "Invalid Test"
+
+Step 12. New test step: Command =`close` to close the window.
+
+Step 13. Run all tests.
+
+Step 14. In the left Tests panel, click on the dropdown below the project title. Set it to "Executing"
+  - At the bottom of the panel, it should display "Runs: 1 Failures: 0"
+
+Step 15. Check the Log panel.
+  - The Log panel should display a success message
+  - On step 3, the echo message should be "Correct Verification" because the text string "Welcome, Login In" was stored in val so the first if statement evaluated to true

@@ -1,0 +1,119 @@
+Selenese Commands
+========================================
+
+- Selenium IDE commands are known as "Selenese" commands
+- Thus Selenese is a language that is used to create automation test scripts using Selenium IDE
+- There are three types of Selenese commands:
+  - Action commands
+  - Accessor commands
+  - Assertion commands
+
+----------------------------------------
+
+## Basic Action Commands
+
+- Action commands interact directly with the application under test
+
+- click(locator)
+- check(locator)
+- uncheck(locator)
+- choose cancel on next confirmation
+- choose cancel on next prompt
+- choose ok on next confirmation
+- click At(locator, coordinateString)
+- close
+- debugger
+- double click(locator)
+- double click at(locator)
+- drag and drop to object(source locator, destination locator)
+- echo(message)
+- edit content(locator, value)
+- execute script(script, variable name)
+- execute async script(script, variable name)
+- mouse down(locator)
+- mouse down at(locator, coordinateString)
+- mouse move at(locator, coordinateString)
+- mouse out(locator)
+- mouse over(locator)
+- mouse up(locator)
+- mouse up at(locator, , coordinateString)
+- open(url)
+- pause(wait time)
+- remove selection(locator, option)
+- run(test case)
+- select(locator, option)
+- select frame(locator)
+- select window(window handle)
+- set window size(resolution)
+- type(locator)
+
+### Action Commands Tutorial
+- See "Action Commands" tutorial
+
+----------------------------------------
+
+## Basic Accessor Commands
+
+- Accessor commands enable the user to store certain values to a user-defined variable
+
+- store(text, variable)
+- store attribute(locator, variable)
+- store text(locator, variable)
+- store title(text, variable)
+- store value(locator, variable)
+- store window handle(window handle)
+- store xpath count(xpath, variable)
+
+### Accessor Commands Tutorial
+- See "Accessor Commands" tutorial
+
+----------------------------------------
+
+## Basic Assertion Commands
+
+- Assertion commands are used to verify the state of the application during test execution
+- Validates whether a specific condition or expectation is met
+- There are different types of assertions:
+  - `assert`: Verifies that a condition is true. If the condition is false, the test stops immediately
+  - `verify`: Similar to Assert, but if the condition fails, the test continues to run. It logs a failure instead of stopping the test
+  - `wait for`: Pauses the test until a specific condition is met ensuring the application is in the expected state before proceeding
+    - E.g. wait for an element to be visible on the page, so that you can store a value from it or assert that it exists
+
+- assert(variable, expected value)
+- assert alert(alert text)
+- assert checked(locator)
+- assert confirmation(text)
+- assert editable(locator)
+- assert element present(locator)
+- assert element not present(locator)
+- assert not checked(locator)
+- assert not editable(locator)
+- assert not selected value(locator, text)
+- assert not text(locator, text)
+- assert prompt(text)
+- assert selected value(locator, text)
+- assert selected label(locator, text)
+- assert text(locator, text)
+- assert title(text)
+- assert value(locator, text)
+- verify(variable, expected value)
+- verify checked(locator)
+- verify editable(locator)
+- verify element present(locator)
+- verify element not present(locator)
+- verify not editable(locator)
+- verify not selected value(locator, text)
+- verify not text(locator, text)
+- verify selected label(locator, text)
+- verify selected value(locator, text)
+- verify text(locator, text)
+- verify value(locator, text)
+- wait for element editable(locator, wait time)
+- wait for element not editable(locator, wait time)
+- wait for element not present(locator, wait time)
+- wait for element not visible(locator, wait time)
+- wait for element present(locator, wait time)
+- wait for element visible(locator, wait time)
+
+### Assertion Commands Tutorial
+- See "Assertion Commands" tutorial

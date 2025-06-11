@@ -1,0 +1,42 @@
+{
+  "id": "9770f84f-220d-495c-a220-5471e2317ff7",
+  "version": "2.0",
+  "name": "Action Commands",
+  "url": "https://www.tutorialspoint.com/selenium/practice/register.php",
+  "tests": [{
+    "id": "30a38ca8-10d1-40bf-b8c8-8ffee7b222b0",
+    "name": "TypeIntoInputField",
+    "commands": [{
+      "id": "3be98ef9-a975-4edd-8395-3abe8cd1ef5a",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "733aea4d-106d-4c49-8891-504c9a920a85",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstname",
+      "targets": [],
+      "value": "Selenium"
+    }, {
+      "id": "03d8ea44-c397-4d00-9fe1-f494d0697e4f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "29b13b67-e4a2-49a5-ada5-2464fd8c6e37",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["30a38ca8-10d1-40bf-b8c8-8ffee7b222b0"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/register.php"],
+  "plugins": []
+}

@@ -1,0 +1,40 @@
+Verify Commands
+========================================
+
+## Scenario
+
+Verify the window title of the web page matches with the specified text.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/radio-button.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Store the page window title into variable pageWindowTitle.
+  - Command = `store title`
+  - Value = "pageWindowTitle"
+
+Step 6. Verify the title of the browser window matches the specified text.
+  - Command = `verify title`
+  - Target = "Hello World"
+
+Step 7. Echo the page window title using variable pageWindowTitle into the Log panel.
+  - Command = `echo`
+  - Target = `Page title: ${pageWindowTitle}`
+
+Step 8. Close the browser window.
+  - Command = `close`
+
+Step 9. Run the test.
+  - `verify title` should fail and be marked in red
+  - The test should continue to run all steps in the test script
+  - The Log should display "Page title: Selenium Practice - Radio Button"
+  - The Log should indicate that the `verify title` step failed

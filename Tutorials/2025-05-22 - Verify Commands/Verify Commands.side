@@ -1,0 +1,56 @@
+{
+  "id": "1e567d04-c0a0-4694-a586-a4be6af87d76",
+  "version": "2.0",
+  "name": "Verify Commands",
+  "url": "https://www.tutorialspoint.com/selenium/practice/radio-button.php",
+  "tests": [{
+    "id": "f0682d4d-ff65-4d2c-9297-3afd12fe03b5",
+    "name": "VerifyTitle",
+    "commands": [{
+      "id": "7798425b-60bc-439f-ae8c-81d1a489a4d9",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9892305d-4c92-4912-8366-4c79f1dad540",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "pageWindowTitle"
+    }, {
+      "id": "daa58f22-8c39-4a90-8063-75897bba002c",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Hello World",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c07db2e-45e9-4f4c-8554-973711864f2d",
+      "comment": "",
+      "command": "echo",
+      "target": "Page title: ${pageWindowTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d63fe0d2-b499-437c-9e45-b780c8e09a66",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ce605a31-8433-4cb7-902d-aa94e2ea2675",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f0682d4d-ff65-4d2c-9297-3afd12fe03b5"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/radio-button.php"],
+  "plugins": []
+}

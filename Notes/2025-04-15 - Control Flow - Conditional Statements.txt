@@ -1,0 +1,44 @@
+Control Flow - Conditional Statements
+========================================
+
+- Selenium IDE commands have the ability to add conditional statements and looping to tests
+- Conditional statements run steps only if specific conditions are met
+  - Can be used to handle specific situations (e.g. pop-ups, subscription windows, cookies consent, etc.)
+  - If "x" appears, do "this" to handle it
+- Looping repeats the same step multiple times depending on the criteria
+
+----------------------------------------
+
+## JavaScript Expressions
+
+- You can check if certain conditions in the app under test are true by using JavaScript expressions
+- Selenium has commands that run JavaScript code during the test and can save the result to a variable
+- You can use these variables later in your test, especially when you're controlling the flow of the test (conditional statements)
+
+### if
+- `if` is the starting command on conditional branching
+- It can be used to check the result of a JavaScript expression or action
+  - E.g. Check if a number is greater than 10. Then decide what to do based on that result
+- It can also be used to check the result of a variable from earlier in the test
+  - E.g. Check if a number stored in a variable is greater than 10
+- If the expression/variable return `true`, then the test will run the steps until it encounters another control flow command (else, else if, end)
+- If the expression/variable return `false`, it will skip the steps listed under `if` and jump to the following conditional command (else, else if, end)
+
+### else if
+- `else if` is used inside an `if` block
+- Similarly to `if`, `else if` accepts a JavaScript expression to be evaluated
+- The steps under `else if` are the test steps that will run because the first `if` condition was not met but the `else if` condition is met
+
+### else
+- `else` is used to accommodate the last condition in the `if` block
+- The steps under `else` runs if all other conditions were not met
+
+### end
+- `end` is used to end the conditional command block
+- Without it, Selenium IDE will return an error
+
+----------------------------------------
+
+## Conditional Statements Tutorial
+
+- See "Conditional Statements" tutorial

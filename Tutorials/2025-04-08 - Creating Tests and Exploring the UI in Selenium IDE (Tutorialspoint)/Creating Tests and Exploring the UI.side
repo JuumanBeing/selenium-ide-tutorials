@@ -1,0 +1,116 @@
+{
+  "id": "cdbe075a-339e-42bd-858f-040c617dfd22",
+  "version": "2.0",
+  "name": "Creating Tests",
+  "url": "https://www.tutorialspoint.com",
+  "tests": [{
+    "id": "7f73cf13-530b-493d-ab68-08434f554004",
+    "name": "Test1",
+    "commands": [{
+      "id": "b2444f28-99e3-4bf0-a8d9-595266821870",
+      "comment": "",
+      "command": "open",
+      "target": "/selenium/index.htm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4718a995-abf4-4502-8d6c-b0abadcdb6d1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "892x848",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a021050-f6ef-42aa-9958-d96c6b1fdd0d",
+      "comment": "click on \"Next\" button on bottom of page",
+      "command": "click",
+      "target": "css=a:nth-child(2) > .button",
+      "targets": [
+        ["css=a:nth-child(2) > .button", "css:finder"],
+        ["xpath=//div[@id='mainContent']/div[4]/div[2]/a[2]/div", "xpath:idRelative"],
+        ["xpath=//a[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30592eae-3301-447c-975c-422a6193ff1b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - Components",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5aa9960c-3b76-412c-a6bd-89f40489088d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - Automation Testing",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf5a1504-6d5c-4d09-be1f-c4bf7e2f7990",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - Environment Setup",
+      "targets": [
+        ["linkText=Selenium - Environment Setup", "linkText"],
+        ["css=.toc:nth-child(3) > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium - Environment Setup')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium/selenium_environment_setup.htm')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium - Environment Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f08eea21-be5a-4a78-b2e8-0aef6cb3b397",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - Remote Control",
+      "targets": [
+        ["linkText=Selenium - Remote Control", "linkText"],
+        ["css=.toc:nth-child(3) > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium - Remote Control')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium/selenium_rc.htm')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium - Remote Control')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3729d143-24f2-4542-8873-7d35a98f1a73",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - IDE Introduction",
+      "targets": [
+        ["linkText=Selenium - IDE Introduction", "linkText"],
+        ["css=.toc:nth-child(4) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium - IDE Introduction')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium/selenium_ide.htm')]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium - IDE Introduction')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbbb548a-5b38-4241-b96c-a5186b5c4341",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - Features",
+      "targets": [
+        ["linkText=Selenium - Features", "linkText"],
+        ["css=.toc:nth-child(4) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Selenium - Features')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium/selenium_ide_features.htm')]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Selenium - Features')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07a7192c-9387-4185-9827-9da924cacf34",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7f73cf13-530b-493d-ab68-08434f554004"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/"],
+  "plugins": []
+}

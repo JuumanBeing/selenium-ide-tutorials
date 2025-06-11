@@ -1,0 +1,63 @@
+What is Selenium IDE?: Learn The Basics
+========================================
+
+## Working Principle of Selenium IDE
+
+- Selenium IDE works in three stages:
+  1. Recording
+  2. Playing back
+  3. Saving
+
+### Recording
+- Records all the actions by the user performed in the browser
+- These recorded actions make up the test script
+
+### Playing Back
+- The recorded script is executed on the browser to ensure it is working as expected
+- The user can monitor the stability and success rate
+
+### Saving
+- The recorded script is saved for future test runs and regression testing
+
+----------------------------------------
+
+## Simple Login Test Tutorial
+
+- See "Simple Login Test" tutorial
+
+----------------------------------------
+
+## Selenium Commands
+
+- Selenium commands are broadly classified into three categories:
+  - Actions
+  - Accessors
+  - Assertions
+
+### Actions
+- Commands that interact directly with the application
+- clickAndWait()
+- typeAndWait()
+
+### Accessors
+- Enable the user to store certain values to a user-defined variable
+- storeTitle()
+
+### Assertions
+- Verifies the current state of the application along with an expected state
+- Validates whether a specific condition or expectation about the application under test (AUT) is met
+- Can act as checkpoints in test scripts to ensure actual results match the expected results
+- In Selenium IDE, there are different types of assertions:
+  - **Assert** command ensures that the test execution is terminated in case of failure (hard assert)
+  - **Verify** command ensures script execution even if the verification failed (soft assert)
+  - **WaitFor** command waits for a specific condition to be met before executing the next test step
+
+----------------------------------------
+
+## Re-useability of Test Scripts
+
+- Many test scripts may require the same steps such as signing in, creating an account, or signing out
+- It is redundant and a waste of time to recreate these test steps over and over
+- To prevent this redundancy, Selenium IDE allows the use of variables and scripts to other scripts (similar to functions in programming)
+
+- See "Reusing Test Scripts" tutorial

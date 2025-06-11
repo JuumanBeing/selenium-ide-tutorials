@@ -1,0 +1,42 @@
+Exact Matching
+========================================
+
+## Scenario
+
+1. Use exact matching to assert two different h1 headers on the page
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/alerts.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Assert that content h1 matches "Alerts" exactly.
+  - Command = `assert text`
+  - Target = `xpath=/html/body/main/div/div/div[2]/h1`
+  - Value = "Alerts" (*)
+  * Exact matching is built into `assert text` so no need to prefix with `exact:`
+
+Step 6. Assert that the page h1 matches "Selenium - Automation Practice Form" exactly.
+  - Command = `assert text`
+  - Target = `xpath=/html/body/div/header/div[2]/h1`
+  - Value = "Selenium - Automation Practice Form"
+
+Step 7. Close the browser window.
+  - Command = `close`
+
+Step 8. Run the test.
+  - All steps should pass
+
+
+Step #. .
+  - Command = ``
+  - Target = ``
+  - Value = ""

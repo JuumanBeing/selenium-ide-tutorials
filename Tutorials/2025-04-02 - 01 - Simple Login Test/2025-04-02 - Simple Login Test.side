@@ -1,0 +1,113 @@
+{
+  "id": "4e29be01-f249-4378-a988-fa72ff8fe512",
+  "version": "2.0",
+  "name": "2025-04-02 - Simple Login Test",
+  "url": "https://myanimelist.net",
+  "tests": [{
+    "id": "8be001eb-a552-42d7-826c-6fe7e0b0e3b6",
+    "name": "Login - Incorrect Credentials",
+    "commands": [{
+      "id": "f41acaee-13c1-4e8e-9f90-44cb5a30fdc3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42cf421a-657f-4cd3-9358-cb44d6f8d51f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1665x842",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7dac644-e378-4fdc-996c-091ccc7057bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96206b0f-c39a-4a11-aa3d-7e6109551ce5",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6145f3f-4bd8-4b93-95e4-16c0320dad92",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "username123"
+    }, {
+      "id": "a9a52ff1-c191-464c-8349-9ab60aaa16cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "password123"
+    }, {
+      "id": "c9a40236-c359-4511-9191-0f69b56564e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-recaptcha-submit",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc926874-a3b5-4312-9242-f836d5bb6b34",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Login - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3a595bfb-3943-4b12-a284-4641848832d6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8be001eb-a552-42d7-826c-6fe7e0b0e3b6"]
+  }],
+  "urls": ["https://myanimelist.net/"],
+  "plugins": []
+}

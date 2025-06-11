@@ -1,0 +1,124 @@
+{
+  "id": "320b22d5-06c0-469c-8244-e55d1f7ba60a",
+  "version": "2.0",
+  "name": "2024-04-02 - Reusing Test Scripts",
+  "url": "https://myanimelist.net",
+  "tests": [{
+    "id": "90a14351-13a2-4c52-a1e4-cf0ed9f01a21",
+    "name": "Login",
+    "commands": [{
+      "id": "35c1791c-dd26-4f47-aa62-f975f1907aa1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "719c688e-ed32-4701-bfed-4cf6ac2be20a",
+      "comment": "",
+      "command": "click",
+      "target": "id=malLogin",
+      "targets": [
+        ["id=malLogin", "id"],
+        ["linkText=Login", "linkText"],
+        ["css=.header-menu-login > #malLogin", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[@id='malLogin']", "xpath:attributes"],
+        ["xpath=//div[@id='header-menu']/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://myanimelist.net/login.php?from=%2F&')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a776a236-dec1-4a03-9dcb-b091b415e751",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUserName",
+      "targets": [
+        ["id=loginUserName", "id"],
+        ["name=user_name", "name"],
+        ["css=#loginUserName", "css:finder"],
+        ["xpath=//input[@id='loginUserName']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55230b48-6ff7-4c8f-8c15-1ca6fafb1c3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUserName",
+      "targets": [],
+      "value": "${username}"
+    }, {
+      "id": "a141336d-c65f-4735-9602-fb8901019e75",
+      "comment": "",
+      "command": "type",
+      "target": "id=login-password",
+      "targets": [
+        ["id=login-password", "id"],
+        ["name=password", "name"],
+        ["css=#login-password", "css:finder"],
+        ["xpath=//input[@id='login-password']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "7f03f47c-314f-487f-9457-f6d512686fed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-recaptcha-submit",
+      "targets": [
+        ["css=.btn-recaptcha-submit", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//table[@id='dialog']/tbody/tr/td/form/div/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb217854-40c3-4c72-8a7b-86036a34b842",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Login - MyAnimeList.net",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6fbdf237-7680-4653-88ec-6f7defc0d5e1",
+    "name": "InvalidCrentials",
+    "commands": [{
+      "id": "708fdd3c-5a5a-40a6-acb5-e6cd086ebcfe",
+      "comment": "",
+      "command": "store",
+      "target": "hellooooousername",
+      "targets": [],
+      "value": "username"
+    }, {
+      "id": "fb11d2a5-32c8-4a5d-aa8f-907938a0781d",
+      "comment": "",
+      "command": "store",
+      "target": "heloooopassword",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "e48d4bc7-9199-4a38-95d3-4e19f4cde96f",
+      "comment": "",
+      "command": "run",
+      "target": "Login",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ee1706a6-8dc6-441d-bb10-717c5df8b6c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["90a14351-13a2-4c52-a1e4-cf0ed9f01a21"]
+  }],
+  "urls": ["https://myanimelist.net/"],
+  "plugins": []
+}

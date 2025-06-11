@@ -1,0 +1,75 @@
+Creating Tests and Exploring the UI in Selenium IDE
+========================================
+
+## Tutorial Instructions
+
+### Recording a Test
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Record a new test in a new project". Enter a project name.
+
+Step 3. Before starting with creating a test in Selenium IDE, we need to specify the application Base URL, where we would record and create the test. Enter the Base URL: https://www.tutorialspoint.com/selenium/. Finally, we would need to click on the Start Recording.
+
+Step 4. The application should open the base URL that had been provided and show a Selenium IDE logo and recording message in red. Also, a red icon should be visible at the top of the Selenium IDE window, denoting recording is in progress in the application. Perform some actions in the web application while Selenium IDE records it.
+
+Step 5. Once all actions have been performed, navigate to the Selenium IDE window and click on the red square icon to stop the recording. Enter a name for the test and click OK.
+
+Step 6. All the steps that have been performed on the application is recorded in the Selenium IDE under the Command, Target, and Value fields. Also, the test case name is visible to the left pane along with a REC button to the top right.
+
+
+### Exploring the UI
+#### Editing the Test Script
+- Once the test is created, the test script appears in the Test Script Editor panel
+- We can get the details on each test step by clicking on them. The details of a selected step is shown below the list of steps.
+
+Step 1. Click on a step in the test script you just recorded.
+  - Command is the action performed on the browser
+  - Target is the element in the application the action was performed on. It is in the form of a locator value or URL
+  - Value is any value that was entered (e.g. typing text into a text field. Text that was typed is the value)
+
+Step 2. Click on the "//" beside the Command dropdown to disable the step.
+  - Click on it again to enable the step
+  - This button disables/enables test steps in the test script
+  - A disabled step will have the "//" symbol beside its step number in the Test Script Editor and the step will be skipped in a test run
+
+Step 3. If your test step opens a new window, you can click on the "Add new window configuration" button
+  - Handles situations where clicking on a link/button opens a new window
+
+Step 4. Click on the dropdown arrow on the Target field.
+  - Here you can see other locator values such as the HTML name attribute, CSS selector, XPath, etc. for the element on the web page
+
+Step 5. In the Test Editor, click on the empty step under your last step to create a new test step.
+  - Enter the command "click"
+  - Click on the "Select target in page" button
+  - Click on a link or button in the application under test
+  - The "Select target in page" button allows you to manually select the target element on the page. Once you do so, the Target value is generated in Selenium IDE
+
+Step 6. Click on the "Find target in page" button.
+  - This button locates the element on the web page
+
+Step 7. With a test step still selected, click on the "Reference" tab at the bottom of the window.
+  - Here you can see the details of the command
+
+Step 8. Right-click a test step to see the available options.
+  - You can manually insert a new command above the selected step, cut, copy, paste, delete, toggle breakpoint, etc.
+
+#### Running Tests
+- To run a single test, click on the "Run current test" button in the toolbar
+- To run all tests in the suite, click on the "Run all tests" button in the toolbar
+- To control the speed of the test execution, use the "Test execution speed" button in the toolbar
+  - The default speed is set to Fast
+
+Step 1. Click on the "Run current test" button to run the test you recorded.
+  - In the Log tab at the bottom of the window, you can see the results of the test
+  - In the case of a pass, the log will say "testName completed successfully"
+  - Apart from that, the all the test steps, along with the test case name turns green, reflecting a pass for all the steps
+  - Additionally, all the steps should appear in the Log tab with a green OK
+
+#### Debugging
+- The "Step over current command" button command can be used to execute each step in the test script sequentially one step at a time for debugging
+
+#### Projects
+- Selenium IDE gives the option to Create, Open, and Save a project using the icons at the top right upper corner of the window
+
+- Step 1. Click on the "Save project" icon.
+- Step 2. Select a location and save.

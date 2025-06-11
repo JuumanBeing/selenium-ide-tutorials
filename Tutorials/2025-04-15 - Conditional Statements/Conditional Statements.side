@@ -1,0 +1,91 @@
+{
+  "id": "fe93adbe-90f6-47a5-aae0-ca2eb85299c7",
+  "version": "2.0",
+  "name": "Conditional Statements",
+  "url": "https://www.tutorialspoint.com/selenium/practice/login.php",
+  "tests": [{
+    "id": "c9cfebdb-1ccd-48a8-b656-a7278042f1d6",
+    "name": "LoginPageHeader",
+    "commands": [{
+      "id": "d290b626-adbc-4c48-a0fd-b9d043a360b2",
+      "comment": "",
+      "command": "open",
+      "target": "login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0679a9b7-9782-49d6-8770-ae2bac085f8d",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"signInForm\"]/h1",
+      "targets": [],
+      "value": "val"
+    }, {
+      "id": "c9acbd79-a9e8-4cb3-be08-98a280ae8495",
+      "comment": "",
+      "command": "if",
+      "target": "${val}===\"Welcome, Login In\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d4a50cf-6e6a-438b-8804-f44715d20f21",
+      "comment": "",
+      "command": "echo",
+      "target": "Correct Verification",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "496b8531-60d9-4e75-af1d-e7f479a2f75e",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${val}===\"Welcome, Register\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c96aa204-0073-4479-a743-8461666d1c00",
+      "comment": "",
+      "command": "echo",
+      "target": "Incorrect Verification",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f613d405-bcc8-41a3-9389-a7ffc4762a88",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ca68150-3033-493c-bd72-a4795ff59ab8",
+      "comment": "",
+      "command": "echo",
+      "target": "Invalid Test",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e4e8ca1-4e70-41db-99f4-decf8afb41ee",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a278c29-fbc6-4dd1-aa28-5be27aa498d8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5fb57cf6-dc54-4a40-b9a1-37783758047f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9cfebdb-1ccd-48a8-b656-a7278042f1d6"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/login.php", "https://www.tutorialspoint.com/selenium/practice/"],
+  "plugins": []
+}

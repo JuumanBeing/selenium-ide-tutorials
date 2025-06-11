@@ -1,0 +1,94 @@
+Element Locating Strategies
+========================================
+
+- There are multiple ways to locate elements on a web page, including:
+  - Browser web developer tool's element inspector
+    - E.g. Firefox Developer Tools
+    - E.g. Chrome DevTools
+- Record clicks with Selenium IDE
+- Selenium IDE's "Select target in page" button
+
+### Browser Web Developer Tools
+- With a modern browser, you can right-click on an element on a web page and select "Inspect"
+- Inspecting an element should open the developer tools' Inspector panel and highlight the element in the HTML
+- You can then right-click the element and copy the CSS selector/path or XPath
+
+### Recording Clicks with Selenium IDE
+- Clicking on an element while Selenium IDE is recording will record the click along with the element's location in the `click` command's Target field
+- Once you stop recording, you can then use the various locator options in the Target dropdown
+
+### Selenium IDE's "Select Target in Page" Button
+- To use Selenium IDE's "Select target in page" button, you must have an applicable command in the Command field (e.g. `click`, `type`, `store text`, etc.) and the web page has been opened by Selenium IDE
+- Once there is an appropriate command in the Command field and the web page has been opened by Selenium IDE, click on the "Select target in page" button
+  - Selenium IDE will switch to the web page window and you'll see elements are highlighted as you hover over them
+  - Click on the element you want to target
+
+----------------------------------------
+
+## Locator Types
+
+- In Selenium IDE, there are different locator types
+- The basic locator types are:
+  - ID
+  - Name
+  - CSS
+  - XPath
+- Other locator types include:
+  - linkText
+  - partialLinkText
+  - tagName
+  - className
+  - ui
+
+### ID
+- The HTML `id` attribute uniquely identifies elements on the page
+- Selenium IDE can use `id` to locate an element by the value of its `id` attribute
+- In Selenium IDE, prefix the id value of the `id` attribute with "id="
+  - Syntax: `id=id value of the element`
+  - E.g. `id=submit_button`
+- Advantages:
+  - Extremely fast and reliable (if the id is unique)
+  - Less prone to breakage
+- Limitations:
+  - Not usable if the element doesn't have an id or the id is dynamically generated (e.g., id=user_12345)
+- Best Practices:
+  - Use `id` as a first choice if available and stable
+
+### Name
+- The HTML `name` attribute can also be used to identify elements on the page
+- Syntax: `name=name value of the element`
+- E.g. `name=username`
+- Advantages:
+  - Useful for form fields
+  - Works well when `id` is unavailable but `name` is unique
+- Limitations:
+    - Less reliable if multiple elements share the same `name` value
+- Best Practices:
+  - Use only if `id` is unavailable and the `name` is unique across the page
+
+### CSS
+- Uses CSS rules to locate an element
+- Syntax: `css=selector`
+- Advantages:
+  - Extremely flexible and powerful
+  - Can locate nested elements, filter by attributes, classes, and more
+  - Preferred in modern web testing
+- Limitations:
+  - May be complex to write for beginners
+  - Can break if the page structure or classes change
+- Best Practices:
+  - Use for targeting elements with specific class names, attributes, or hierarchical positions
+  - Avoid overly complex selectors to reduce brittleness
+
+### XPath (XML Path Language)
+- Uses XML to navigate through the DOM tree by using XML-like syntax
+- Syntax: `xpath=//tag[@attribute='value']`
+- Advantages:
+  - Extremely powerful; can navigate up and down the DOM tree
+  - Supports conditional logic and indexing
+- Limitations:
+  - More verbose and harder to read
+  - More fragile and slower than CSS for large DOMs
+- Best Practices:
+  - Use XPath only when CSS or other simpler locators aren’t viable.
+  - Use `//` for relative paths and avoid absolute paths like `/html/body/...`

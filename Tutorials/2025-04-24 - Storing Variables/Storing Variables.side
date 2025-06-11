@@ -1,0 +1,91 @@
+{
+  "id": "d395dee6-8bd8-4f74-91f9-9be252f9cace",
+  "version": "2.0",
+  "name": "Storing Variables",
+  "url": "https://www.tutorialspoint.com/selenium/practice/register.php",
+  "tests": [{
+    "id": "d2c4de31-72c1-4a90-a7e5-f94210558b5b",
+    "name": "StoringVariables",
+    "commands": [{
+      "id": "940c3fa3-e5e2-45b6-8a59-e3a56add26e1",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "becdc000-fb28-4d23-8055-12498b5aa823",
+      "comment": "",
+      "command": "store",
+      "target": "Selenium",
+      "targets": [],
+      "value": "firstName"
+    }, {
+      "id": "1d9e56d6-cce4-410e-925c-02bce7aef5a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstname",
+      "targets": [],
+      "value": "${firstName}"
+    }, {
+      "id": "e6ca5e1d-e1f5-46c5-89d2-7559d3cb1285",
+      "comment": "",
+      "command": "store",
+      "target": "Tutorialspoint",
+      "targets": [],
+      "value": "lastName"
+    }, {
+      "id": "d204e414-2268-430b-b684-42105491dc33",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastname",
+      "targets": [],
+      "value": "${lastName}"
+    }, {
+      "id": "092867e4-0802-471f-88a9-fdd9676cf14e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=div > h1",
+      "targets": [],
+      "value": "pageTitle"
+    }, {
+      "id": "a08b765e-e73c-4d3c-92d5-c7f4dbd1d258",
+      "comment": "",
+      "command": "echo",
+      "target": "${pageTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "158cba6c-b491-4122-ad89-6d142fdeff0c",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=firstname",
+      "targets": [],
+      "value": "firstNameValue"
+    }, {
+      "id": "4888737b-91cc-4880-9a8d-3a2095cc5fa6",
+      "comment": "",
+      "command": "echo",
+      "target": "${firstNameValue}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "160b84a1-17b8-4586-9191-362638e0bc87",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9bbc1d92-df86-4297-90e8-9cfa7693b760",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d2c4de31-72c1-4a90-a7e5-f94210558b5b"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium", "https://www.tutorialspoint.com/selenium/practice/register.php"],
+  "plugins": []
+}

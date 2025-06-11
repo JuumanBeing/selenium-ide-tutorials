@@ -1,0 +1,46 @@
+Simple Login Test
+========================================
+
+## Scenario
+
+Consider the following use case for the tutorial:
+- Navigate to https://www.facebook.com
+- Provide a dummy user ID and password
+- Log in with these credentials
+- Assert title of the application
+
+Note: I ran into a CSP Protection error while trying the tutorial with Facebook. I used myanimelist.net instead.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+### Recording
+
+Step 1. Open the Selenium IDE plugin in your browser.
+Step 2. Select "Record a test in a new project." Provide the name for your test.
+Step 3. Provide a link to the Facebook webpage. The IDE starts recording by navigating to this web page. To continue, click on, OK.
+Step 4. Once the website opens, type "username1" in the username field and a dummy password for the password field.
+Step 5. Click on "Log In."
+Step 6. Now, we verify the title of our application. To do that, Right click -> Selenium IDE -> Assert title. As soon as this is done, a test step would be appended in the IDE editor.
+
+Now go back to the IDE editor and click on the Stop icon on the top right corner. With this, we’ve successfully recorded our test case.
+
+
+### Playing Back
+
+Now that the recording is done, we can play it back to verify if the script executes correctly and the browser behaves accordingly. To do this, we can click on the play icon on the menu bar.
+
+The commands successfully executed are color-coded in green.
+The log at the bottom indicates any errors that occurred during the execution.
+If the script runs successfully, it indicates this by displaying a message.
+
+
+### Saving
+
+Once the test script is successfully executed, you can save it.
+
+Step 1. Click on the save icon in the top-right corner.
+Step 2. Browse the location and save it in an appropriate folder.
+
+The project is stored with a “.side” extension — this can be used for future runs and regressions.

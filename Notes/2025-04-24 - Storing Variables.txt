@@ -1,0 +1,14 @@
+Storing Variables
+========================================
+
+- Selenium IDE can store and access variables
+- `store`
+- `store text` stores the text inside an HTML element on a web page
+- `store value` stores the value attribute of an element
+- `echo` can be used to print the stored value of the variable in the Logs panel
+
+----------------------------------------
+
+## Storing Variables Tutorial
+
+- See "Storing Variables" tutorial

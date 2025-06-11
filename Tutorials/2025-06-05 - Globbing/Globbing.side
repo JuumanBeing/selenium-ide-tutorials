@@ -1,0 +1,49 @@
+{
+  "id": "5f523718-2f79-48b5-b33b-b240c000f0a6",
+  "version": "2.0",
+  "name": "Globbing",
+  "url": "https://www.tutorialspoint.com/selenium/practice/alerts.php",
+  "tests": [{
+    "id": "ef20583c-7b17-4070-b17d-c2a659be37ce",
+    "name": "Globbing",
+    "commands": [{
+      "id": "b1c93f86-9a11-46a6-b2aa-f9c013a9690e",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0ec7501-3b09-4715-8ba2-73b2119be16d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/main/div/div/div[2]/h1",
+      "targets": [],
+      "value": "glob:Alert*"
+    }, {
+      "id": "4d3f7d40-a006-4e88-87cd-ce5a1e97df92",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/div/header/div[2]/h1",
+      "targets": [],
+      "value": "glob:Selenium - Automation*"
+    }, {
+      "id": "aa89c8c0-88e8-4386-8c6d-fe61dc3a9ef8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dbb7dc70-91a4-4000-b70a-cfa9a0c0171e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ef20583c-7b17-4070-b17d-c2a659be37ce"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/alerts.php"],
+  "plugins": []
+}

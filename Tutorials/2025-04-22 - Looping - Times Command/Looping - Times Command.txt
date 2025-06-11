@@ -1,0 +1,56 @@
+Looping - Times Command
+========================================
+
+## Resource
+
+Original tutorial written by Perplexity.ai using the following prompt and then modified for my needs:
+"Write a tutorial for using the `times` command in Selenium IDE with a real-world use case. The target audience are beginners learning Selenium IDE for the first time.""
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://google.com.
+
+Step 4. Click on the "Start recording" button to start recording the test script.
+
+Step 5. After the app launches, click in the search field, enter "1", and press enter.
+
+Step 6. Close the window.
+
+Step 7. Stop the recording.
+
+Step 8. Delete any unwanted test steps (e.g. `set window size` and accidental mouseovers)
+
+Step 9. Under the `type` command, we want to add the `Enter` key press.
+    - Command = `send keys`
+    - Target = This should be the same target as the `type` command
+    - Value = `${KEY_ENTER}`
+
+Step 10. Above, the `click` command, create a variable named count with the value 1.
+  - Command = `execute script`
+  - Target = "return 1"
+  - Value = "count"
+
+Step 11. Change the `type` command's Value to `${count}`
+
+Step 12. Under the `send keys` command, increment count by 1
+  - Command = `execute script`
+  - Target = `return ${count} + 1`
+  - Value = "count"
+
+Step 13. We want to repeat the `click`, `type`, and increment steps 5 times so above the `click` command, insert a `times` command.
+  - Command = `times`
+  - Target = 5
+
+Step 14. End the `times` loop after the `execute script` where count is incremented.
+  - Command = `end`
+
+Step 15. Set the test execution speed to about 80% so you can see the test run easier.
+
+Step 16. Run the test.
+  - The app should search the count number then increment up to 5 times before closing the window

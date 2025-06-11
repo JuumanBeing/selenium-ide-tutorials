@@ -1,0 +1,85 @@
+Pattern Matching
+========================================
+
+- Sometimes elements on a page are dynamic and can change slightly each time
+  - e.g. timestamps or usernames
+- Selenium IDE supports **pattern matching** for testing dynamic content and verification scenarios
+- Pattern matching allows you to look for general patterns instead of exact matches
+- Allows defining expected values using special characters, like wildcards
+
+- Pattern matching works with many verification commands in Selenium IDE, such as:
+  - `verify text`
+  - `verify not text`
+  - `verify title`
+  - `verify value`
+  - `verify`
+  - `assert text`
+  - `assert alert`
+  - `assert not text`
+  - `assert prompt`
+  - `assert selected value`
+  - `assert title`
+  - `assert not selected value`
+  - `assert selected label`
+  - etc.
+
+- The different wants of pattern matching include:
+  - Globbing
+  - Regular expressions
+  - Exact matching
+
+----------------------------------------
+
+## Globbing
+
+- Globbing is a method used to match strings based on patterns that include wildcard characters
+- It is commonly used in file systems like Linux or Windows to search for files using patterns such as `*.doc` or `*.jpg`
+
+- Globbing is supported by default in Selenium IDE, so it's optional to explicitly use the keyword `glob:` in test steps.
+  - If you use `glob:`, there should be no space after it, otherwise it will count the space as a character to match
+
+- Globbing is case sensitive
+
+- In selenium IDE, globbing can be used in several ways:
+  - `*` matches any number of characters (zero or more characters)
+    - E.g. `*.jpg` matches any filename that ends in `.jpg`
+      - Matches: `image.jpg`, `photo.jpg`, `holiday2023.jpg`
+      - Does NOT match: `image.jpeg`, `image.png`
+
+  - `?` matches exactly one character
+    - E.g. `file?.txt` matches any filename is named `file`anyCharacter`.txt`
+      - Matches: `file1.txt`, `fileA.txt`
+      - Does NOT match: `file10.txt`, `file.txt`
+
+  - `[]` defines a character class and matches any one character within the brackets
+    - E.g. `[0-9]` matches any digit
+    - E.g. `file[a-c].txt`
+      - Matches: `filea.txt`, `fileb.txt`, `filec.txt`
+
+----------------------------------------
+
+## Globbing Points Tutorial
+
+- See "Globbing" tutorial
+
+----------------------------------------
+
+## Exact Matching
+
+- Exact matching is used to find a string that matches exactly as it appears
+- When you need to match a string exactly, you can use the "exact" pattern
+- In this type of matching, special characters, like the operator `*`, are treated as regular characters and not as wildcards
+
+- Exact matching is built into `assert text` so no need to prefix with `exact:`
+
+- Exact matching is case sensitive
+
+----------------------------------------
+
+## Exact Matching Tutorial
+
+- See "Exact Matching" tutorial
+
+----------------------------------------
+
+## Regular Expressions

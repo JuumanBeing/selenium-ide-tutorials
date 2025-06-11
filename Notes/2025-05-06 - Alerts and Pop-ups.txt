@@ -1,0 +1,54 @@
+Alerts & Pop-ups
+========================================
+
+- Selenium IDE can be used to handle alerts and pop-ups
+
+### Selenium IDE Commands for Alerts and Pop-ups
+- `webdriver answer on visible prompt`: Input specified text in the currently displayed JavaScript prompt and then click on the OK button in the prompt
+  - Intended for use when the prompt is already visible
+  - If the prompt has not appeared yet, `answer on next prompt` should be used instead
+
+- `webdriver choose cancel on visible prompt`: Used to click on the Cancel button in the currently displayed JavaScript prompt
+  - Intended for use when the prompt is already visible
+  - If the prompt has not appeared yet, `choose cancel on next prompt` should be used instead
+
+
+- `webdriver choose ok on visible confirmation`: Used to click on the OK button in the currently displayed JavaScript confirmation dialogue box
+  - Intended for use when the confirmation dialogue is already visible
+  - If the confirmation has not appeared yet, `choose ok on next confirmation` should be used instead
+
+- `webdriver choose cancel on visible confirmation`: Used to click on the Cancel button in currently displayed JavaScript confirmation dialogue box
+  - Intended for use when the confirmation dialogue is already visible
+  - If the confirmation has not appeared yet, `choose cancel on next confirmation` should be used instead
+
+
+- `answer on next prompt`: Used to predefine text that will be entered into the next JavaScript prompt when it appears
+  - When the prompt pops up, Selenium automatically inputs the specified answer and clicks the OK button
+
+- `choose cancel on next prompt`: Used to pre-plan clicking the Cancel button on the next JavaScript prompt when it appears
+  - When the prompt pops up, Selenium automatically clicks the Cancel button
+
+
+- `choose ok on next confirmation`: Used to pre-plan clicking the OK button on the next JavaScript confirmation dialogue box
+  - When the confirmation pops up, Selenium automatically clicks on the OK button
+
+- `choose cancel on next confirmation`: Used to pre-plan clicking on the Cancel button on the next JavaScript confirmation dialogue box
+  - When the confirmation pops up, Selenium automatically clicks on the Cancel button
+
+- `assert prompt(text)`: Used to verify that the text displayed in a JavaScript prompt matches the specified text
+  - Can also be used as a way to check that the prompt has been rendered
+  - If assertion fails, test execution will stop at the point of mismatch
+
+- `assert alert(text)`: Used to verify that the text displayed in a JavaScript alert dialogue box matches the specified text
+  - Can also be used as a way to check that prompt has been rendered
+  - If assertion fails, test execution will stop at the point of mismatch
+
+- `assert confirmation(text)`: Used to verify that the text displayed in a JavaScript confirmation dialogue box matches the specified text
+  - Can be used as a way to check that the confirmation has been rendered
+  - If assertion fails, test execution will stop at the point of mismatch
+
+----------------------------------------
+
+## Alerts and Pop-ups Tutorial
+
+- See "Alerts and Pop-ups" tutorial

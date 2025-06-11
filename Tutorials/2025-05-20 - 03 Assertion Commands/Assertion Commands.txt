@@ -1,0 +1,44 @@
+Assertion Commands
+========================================
+
+## Scenario
+
+1. Verify the window title of the web page matches with the specified text.
+2. Assert that the text in a notification matches with the specified text.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/links.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Verify the title of the browser window matches the specified text.
+  - Command = `verify title`
+  - Target = "Selenium Practice - Links"
+
+Step 6. Click on the "Created" link.
+  - Command = `click`
+  - Target = `xpath=//*[@id="created"]`
+
+Step 7. Wait 3 seconds for the notification element to be visible.
+  - Command = `wait for element visible`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[1]`
+  - Value = "3000"
+
+Step 8. Assert that the text in the notification element matches the specified text.
+  - Command = `assert text`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[1]`
+  - Value = "Link has responded with staus 201 and status text Created"
+
+Step 9. Close the browser window.
+  - Command = `close`
+
+Step 10. Run the test.
+  - All steps should pass

@@ -1,0 +1,61 @@
+Control Flow - Looping
+========================================
+
+- Looping repeats the same step multiple times depending on the criteria
+
+----------------------------------------
+
+## Basic Looping Commands
+
+### times
+- The `times` command is used to define the number of iterations an action/actions need to be performed
+- The number of iterations is inputted into the Target field
+- A `times` command should be ended with the `end` command
+
+### do
+- `do` is used to begin a loop
+- Following the `do` command are the steps to be repeated
+- Every `do` loop must end with the `repeat if` command
+  - `repeat if` takes a JavaScript expression that is in the Target field and evaluates it
+- The steps in the `do` loop will be executed first
+- Then `repeat if` will evaluate the JavaScript expression. If it returns `true`, the loop will repeat
+- In the case of infinite loops, the loop will run up to 1,000 times to prevent infinite loops
+  - This maximum number of attempts can be changed by entering a different value in the Value field of the `repeat if` command
+
+### while
+- In a `while` command, the JavaScript expression to be evaluated is inputted into the Target field
+- If the expression returns `true`, the steps in the `while` loop will run until the `end` command
+- After the `end` command, the `while` loop will check the JavaScript expression again and continue repeating the steps as long as the JavaScript expression evaluates to `true`
+
+### forEach
+- `forEach` allows you to loop through each item in a collection (e.g. array) and perform actions on individual items
+- Target field: Enter the name of the variable that contains the array or collection you want to iterate over
+- Value field: Enter the name of the iterator variable. This variable will represent each item in the collection as the loop runs
+- When in the loop, the iterator variable can be used to refer to the current item in the collection
+
+- Example Scenario: Suppose you have an array of usernames and you want to enter each username into a search field, one by one
+1. Define the array
+  - Store the array in a variable using `execute script` command
+  - Command = `execute script`
+  - Target = `return ['alice', 'bob', 'charlie'];`
+  - Value = "users" (variable name)
+2. Use the `forEach` command
+  - Command = `forEach`
+  - Target = "users" (the variable holding the array)
+  - Value = "user" (iterator variable)
+3. Perform actions inside the loop
+  - Inside the loop, perform these steps:
+    - Command = `type`
+    - Target = `id=search-input`
+    - Value = `${user}`
+
+    - Command = `click`
+    - Target = `id=search-button`
+4. End the loop
+  - Command = `end`
+
+----------------------------------------
+
+## Looping Tutorial
+
+- See "Looping" tutorial

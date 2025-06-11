@@ -1,0 +1,80 @@
+Alerts & Pop-ups
+========================================
+
+## Tutorial 1
+
+On the practice web page, clicking on the last "Click Me" button triggers a prompt. We use Selenium IDE to input the text, "Tutorialspoint", and click the OK button.
+
+Then we verify the text of an alert box. Be aware that the text is case sensitive.
+
+Note: The browser will not visually display the dialogue boxes so they will not be visible.
+
+----------------------------------------
+
+## Tutorial 1 Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/alerts.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Answer the next prompt that appears.
+  - Command = `answer on next prompt`
+  - Value = "Tutorialspoint"
+
+Step 6. Click on the last "Click Me" button on the page.
+  - Command = `click`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[4]/button`
+
+Step 7. Click on the "Alert" button.
+  - Command = `command`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[1]/button`
+
+Step 8. Verify the text in the alert dialogue box.
+  - Command = `assert alert`
+  - Target = "Hello world!"
+
+Step 9. Close the browser window.
+  - Command = `close`
+
+Step 10. Run the test.
+  - All steps should pass
+
+----------------------------------------
+
+## Tutorial 2
+
+On the practice web page, clicking on the third "Click Me" button triggers a confirmation dialogue box. We use Selenium IDE to click on the OK button.
+
+Once the confirmation dialogue box is closed, we verify that the web page displays the text, "You pressed OK!" Be aware that the text is case sensitive.
+
+----------------------------------------
+
+Step 1. Using the same project as the tutorial above, create a new test.
+
+Step 2. Open the web page.
+  - Command = `open`
+
+Step 3. Click on the OK button on the next confirmation box.
+  - Command = `choose ok on next confirmation`
+
+Step 4. Click on the third "Click Me" button on the page.
+  - Command = `click`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[3]/button`
+
+Step 5. Verify that the text, "You pressed OK!", is displayed.
+  - Command = `assert text`
+  - Target = `xpath=//*[@id="desk"]`
+  - Value = "You pressed OK!"
+
+Step 6. Close the browser window.
+  - Command = `close`
+
+Step 10. Run the test.
+  - All steps should pass
+  - Alternatively, click on "Run all tests" to run both tests in the tutorial
+    - The bottom of the Tests panel should display "Runs: 2 Failures: 0". If this is not displayed, change the Tests panel dropdown to "Executing"

@@ -1,0 +1,11 @@
+Personal Notes
+========================================
+
+1. Selenium Tutorial for Beginners by [Simplilearn](https://www.simplilearn.com/tutorials/selenium-tutorial)
+  - Up to and including Lesson 2
+  - Switched tutorials because this wasn't quite what I was looking for
+  - Tutorial is general overall Selenium tutorial and does not go in depth with using Selenium IDE
+  - Tutorial instructions are poorly written and hard to understand
+
+2. Selenium Tutorial by [Tutorialspoint](https://www.tutorialspoint.com/selenium/index.htm)
+  - Variables should've been taught before Control Flow

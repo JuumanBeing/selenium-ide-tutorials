@@ -1,0 +1,38 @@
+What is Selenium IDE?: Learn The Basics Pt. 2
+========================================
+
+## Debugging in IDE
+
+### Step Execution
+- In Selenium IDE, you can use step execution to debug
+- This allows you to execute each step in the test script sequentially one step at a time
+
+- To perform step execution:
+  1. Click on the "Step over current command" button
+  2. The command executes and pauses
+  3. Click on the "Step over current command" button to keep executing one step at a time
+
+- Step execution is useful when the test cases are long
+- You can check errors at any step and reveal where the test might be failing
+
+
+### Breakpoints
+- Breakpoints allow you to pause the test run at any command
+
+- To add a breakpoint, click on the line number to the left of the command
+- Breakpoints can also be added/removed by right-clicking any test step and selecting "Toggle breakpoint"
+
+- Once a test is running, the debugger will execute all the steps before the breakpoint and pauses the execution at the breakpoint
+- Once paused, you can use step-by-step execution for debugging
+
+- Breakpoints can be disabled/re-enabled with the "Disable breakpoints" button at the top-right of the window near the "Start recording" button
+
+
+### Play to This Point
+- Another way to add a breakpoint is to right-click a command and selecting "Play to this point"
+- The test will immediately run and execute all steps before the selected command after selecting the option
+
+
+### Pause on Exception
+- With "Pause on exceptions" enabled, Selenium IDE will pause the test run and automatically enter debug mode in the case of a failed step
+- Enable it by clicking the button on the top right, next to the "Start recording" button

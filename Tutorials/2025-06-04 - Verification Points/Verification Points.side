@@ -1,0 +1,63 @@
+{
+  "id": "c0df53f2-6057-4fac-9a75-ee39c8a8874f",
+  "version": "2.0",
+  "name": "Verification Points",
+  "url": "https://www.tutorialspoint.com/selenium/practice/links.php",
+  "tests": [{
+    "id": "e1256b10-0bfe-4fcf-adcb-9b00db891639",
+    "name": "VerifyWaitAssert",
+    "commands": [{
+      "id": "fdf57c04-4def-44f4-b47f-49509d01124b",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "880df287-96f3-406b-9d20-1808ae3e9134",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Selenium Practice - Links",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd4a0579-a20d-4c64-adb2-c6f6ad98a492",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"created\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a23bded-d259-4993-8277-14b8211c97fc",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=/html/body/main/div/div/div[2]/div[1]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "f3b5eed2-25a2-46f7-b960-b5c3c09b662b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/div/div/div[2]/div[1]",
+      "targets": [],
+      "value": "Link has responded with staus 201 and status text Created"
+    }, {
+      "id": "aa93bb31-90dc-4bb9-89b3-2c7a9dad1699",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0d4f3aaf-c7b2-4dfe-878b-af00c120b498",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e1256b10-0bfe-4fcf-adcb-9b00db891639"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/links.php"],
+  "plugins": []
+}

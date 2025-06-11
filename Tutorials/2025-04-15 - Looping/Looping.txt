@@ -1,0 +1,34 @@
+Looping
+========================================
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/login.php.
+
+Step 4. Store the number 1 in the variable "val".
+  - Command = `execute script`
+  - Target = "return 1"
+  - Value = "val"
+
+Step 5. Create the `while` loop.
+  - Command = `while`
+  - Target = `${val} < 3`
+
+Step 6. If "val" is less than 3, print the value of variable "val"
+  - Command = `echo`
+  - Target = `${val}`
+
+Step 7. Then increment the value of "val" by 1.
+  - Command = `execute script`
+  - Target = `return ${val} + 1`
+  - Value = "val"
+
+Step 8. End the loop.
+  - Command = `end`
+
+Step 9. Run the test.
+  - The Log should display echo 1 and 2 and success message

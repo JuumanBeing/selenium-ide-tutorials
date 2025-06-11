@@ -1,0 +1,96 @@
+{
+  "id": "76aeea96-38a0-4abb-810a-d70ba91d02dc",
+  "version": "2.0",
+  "name": "Looping - Times Command",
+  "url": "https://google.com",
+  "tests": [{
+    "id": "8c94611e-d7c0-440b-b59a-ae976f89bcfc",
+    "name": "TimesCommand",
+    "commands": [{
+      "id": "5a32b172-cc13-4321-aabb-e4fe10e2dfbe",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15891071-89d8-4269-a702-495f1e79c709",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "8f5e970b-b660-455b-b28f-d62684c68e1e",
+      "comment": "",
+      "command": "times",
+      "target": "5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7969fe9-080b-4663-9e3a-ef4ee937c523",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaf9731b-b8ff-4f3b-b98f-fe4a7a326d79",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "${count}"
+    }, {
+      "id": "8057f15b-cab8-4d68-b4cc-acb676929917",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=APjFqb",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "b353c2be-2c40-4e4b-8a29-3ef477a17a5e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${count} + 1",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "6640c291-1ed4-4a25-9194-4492a1746a09",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "571fcbac-2f5b-4119-a983-08ef10785368",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "13ecace4-ef7e-4275-9942-727306360698",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://google.com/"],
+  "plugins": []
+}

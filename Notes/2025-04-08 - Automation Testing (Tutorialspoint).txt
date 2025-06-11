@@ -1,0 +1,17 @@
+Automation Testing
+========================================
+
+## Different Types of Selenium Tests
+
+- Selenium can be used to create different types of tests
+- Functional tests: Tests various functionalities and features of the application/product
+- Regression tests: Tests if code changes have broken existing functionality of the application
+- Smoke tests: Verifies if new build is stable enough to carry out testing activities on it
+- Integration tests: Validates if the integration of all the modules are working together
+- Unit tests: Created by the developers to test their code
+
+----------------------------------------
+
+## Creating Tests and Exploring the UI in Selenium IDE tutorial
+
+- See "Creating Tests and Exploring the UI in Selenium IDE" tutorial

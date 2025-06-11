@@ -1,0 +1,56 @@
+Globbing
+========================================
+
+## Scenario
+
+1. Use globbing to assert two different h1 headers on the page
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/alerts.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Assert that content h1 matches "Alert" and any characters after it.
+  - Command = `assert element present` (*)
+  - Target = `xpath=/html/body/main/div/div/div[2]/h1`
+  - Value = `glob:Alert*`
+
+Step 6. Assert that the page h1 matches "Selenium - Automation" and any characters after it.
+  - Command = `assert element present` (*)
+  - Target = `xpath=/html/body/div/header/div[2]/h1`
+  - Value = `glob:Selenium - Automation*`
+
+Step 7. Close the browser window.
+  - Command = `close`
+
+Step 8. Run the test.
+  - All steps should pass
+
+
+* The tutorial said to use `assert text` but it does not work with globbing. `assert element present` works instead
+
+Explanation from ChatGPT:
+
+Here's why `glob:Alert*` works with `assert element present` but not with `assert text`:
+
+✅ `assert element present`:
+- This command **checks for the presence of an element** in the DOM.
+- When you use `glob:Alert*` here, you're matching **against a locator**, not against the visible **text content** of the element.
+- It accepts glob patterns in the locator (or label, like IDs or names) if supported.
+- If an element's name, ID, label, or another string matches Alert*, it passes.
+
+❌ assert text:
+- This command compares the **text content** of an element with the expected value.
+- The `glob:` prefix is officially supported, but **some Selenium IDE versions (especially recent ones) do not parse `glob:` correctly in the `Value` field** of `assert text`.
+- These versions either:
+  - Expect globbing without the prefix (but then misinterpret it)
+  - Or require regex for pattern-based matches
+  - Or have a **bug that breaks glob support specifically for text comparisons**

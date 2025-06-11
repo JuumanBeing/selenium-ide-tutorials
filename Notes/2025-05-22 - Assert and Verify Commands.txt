@@ -1,0 +1,20 @@
+Assert and Verify Commands
+========================================
+
+- An Assert command is used to validate whether a specific condition is true
+  - If the condition is not met, the test stops immediately
+
+- A Verify command is similar to Assert, but if the condition is not met, the test continues to run
+  - It logs a failure instead of stopping the test
+
+----------------------------------------
+
+## Assert Commands Tutorial
+
+- Skipped tutorial because it doesn't cover anything new
+
+----------------------------------------
+
+## Verify Commands Tutorial
+
+- See "Verify Commands" tutorial

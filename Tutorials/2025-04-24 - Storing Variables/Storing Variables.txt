@@ -1,0 +1,58 @@
+Storing Variables
+========================================
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/register.php.
+
+Step 4. For the first step, enter the `open` command.
+  - Command = `open`
+
+Step 5. Store the text "Selenium" in variable `firstName`.
+  - Command = `store`
+  - Target = "Selenium"
+  - Value = `firstName`
+
+Step 6. `type` the value of variable firstName into the First Name text field.
+  - Command = `type`
+  - Target = `id=firstname`
+  - Value = `${firstName}`
+
+Step 7. Store the text "Tutorialspoint" in variable `lastName`.
+  - Command = `store`
+  - Target = "Tutorialspoint"
+  - Value = `lastName`
+
+Step 8. Type the value of variable lastName into the Last Name text field.
+  - Command = `type`
+  - Target = `id=lastname`
+  - Value = `${lastName}`
+
+Step 9. Store the text of HTML element `css=div > h1` in variable `pageTitle`.
+  - Command = `store text`
+  - Target = `css=div > h1`
+  - Value = `pageTitle`
+
+Step 10. Print the value of variable `pageTitle` in the Log.
+  - Command = `echo`
+  - Target = `${pageTitle}`
+
+Step 11. Store the value that is in the First Name text box in variable `firstNameValue`.
+  - Command = `store value`
+  - Target = `id=firstname`
+  - Value = `firstNameValue`
+
+Step 12. Print the value of variable `firstNameValue` in the Log.
+  - Command = `echo`
+  - Target = `${firstNameValue}`
+
+Step 13. Close the browser window.
+  - Command = `close`
+
+Step 14. Run the test.
+  - The Log should display "echo: Selenium - Automation Practice Form" and "echo: Selenium"
+  - All steps should pass

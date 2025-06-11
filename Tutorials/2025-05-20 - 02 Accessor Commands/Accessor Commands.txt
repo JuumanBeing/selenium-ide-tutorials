@@ -1,0 +1,67 @@
+Accessor Commands
+========================================
+
+## Scenario
+
+1. Store text in variables and use the variables to enter text into input fields.
+2. Obtain and store text from the web page into a user-defined variable.
+3. Obtain and store a value from the web page into a user-defined variable.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/register.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Store the word "Selenium" into variable firstName.
+  - Command = `store`
+  - Target = `Selenium`
+  - Value = "firstName"
+
+Step 6. Enter the text stored in the variable firstName into the "First Name" text field.
+  - Command = `type`
+  - Target = `id=firstname`
+  - Value = `${firstName}`
+
+Step 7. Store the word "Tutorialspoint" into variable lastName.
+  - Command = `store`
+  - Target = `Tutorialspoint`
+  - Value = "lastName"
+
+Step 8. Enter the text stored in the variable lastName into the "Last Name" text field.
+  - Command = `type`
+  - Target = `id=lastname`
+  - Value = `${lastName}`
+
+Step 9. Store the page title text into variable pageTitle.
+  - Command = `store text`
+  - Target = `css=div > h1`
+  - Value = "pageTitle"
+
+Step 10. Echo the text stored in variable pageTitle into the Log panel.
+  - Command = `echo`
+  - Target = `Page title: ${pageTitle}`
+
+Step 11. Store the value of the "First Name" input text field into variable firstNameValue.
+  - Command = `store value`
+  - Target = `id=firstname`
+  - Value = "firstNameValue"
+
+Step 12. Echo the text stored in variable firstNameValue into the Log panel.
+  - Command = `echo`
+  - Target = `First name: ${firstNameValue}`
+
+Step 13. Close the browser window.
+  - Command = `close`
+
+Step 14. Run the test.
+  - The Log should display "Page title: Selenium - Automation Practice Form"
+  - The Log should display "First name: Selenium"
+  - All steps should pass

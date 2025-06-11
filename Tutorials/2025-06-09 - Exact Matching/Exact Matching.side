@@ -1,0 +1,57 @@
+{
+  "id": "69a60edf-d373-482e-8070-0ff08ff2d61b",
+  "version": "2.0",
+  "name": "Exact Matching",
+  "url": "https://www.tutorialspoint.com/selenium/practice/alerts.php",
+  "tests": [{
+    "id": "297b3e98-b1d7-450d-bb49-a78f408ec4aa",
+    "name": "ExactMatching",
+    "commands": [{
+      "id": "6606243d-9f76-4571-84c6-70786a780528",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d14c90e3-9775-4d8c-abe3-42923d9a2f56",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/main/div/div/div[2]/h1",
+      "targets": [
+        ["css=.mb-3", "css:finder"],
+        ["xpath=//div/div[2]/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Alerts')]", "xpath:innerText"]
+      ],
+      "value": "Alerts"
+    }, {
+      "id": "e9be021b-ea82-4da8-a2c1-5c8b799cc7aa",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div/header/div[2]/h1",
+      "targets": [
+        ["css=.header h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Selenium - Automation Practice Form')]", "xpath:innerText"]
+      ],
+      "value": "Selenium - Automation Practice Form"
+    }, {
+      "id": "7f8ca151-1940-4111-a17e-3a69f23fefa4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ffbc14b9-8edb-4525-88fc-fd5aeae90c2a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["297b3e98-b1d7-450d-bb49-a78f408ec4aa"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/alerts.php"],
+  "plugins": []
+}

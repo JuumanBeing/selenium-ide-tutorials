@@ -1,0 +1,45 @@
+Verification Points
+========================================
+
+## Scenario
+
+1. Verify a page title
+2. Click on a link and wait for a state
+3. Then assert that an element is visible after clicking the link
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/links.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Verify the page title.
+  - Command = `verify title`
+  - Target = "Selenium Practice - Links"
+
+Step 6. Click on the "Created" link.
+  - Command = `click`
+  - Target = `xpath=//*[@id="created"]`
+
+Step 7. Wait for an element to become visible.
+  - Command = `wait for element visible`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[1]`
+  - Value = `30000`
+
+Step 8. Assert the text that appears after clicking the link.
+  - Command = `assert text`
+  - Target = `xpath=/html/body/main/div/div/div[2]/div[1]`
+  - Value = "Link has responded with staus 201 and status text Created"
+
+Step 9. Close the browser window.
+  - Command = `close`
+
+Step 10. Run the test.
+  - All steps should pass

@@ -1,0 +1,30 @@
+Action Commands
+========================================
+
+## Scenario
+
+Enter text into the input field using the action commands open, type, and close.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/register.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Type into the input field.
+  - Command = `type`
+  - Target = `id=firstname`
+  - Value = "Selenium"
+
+Step 6. Close the browser window.
+  - Command = `close`
+
+Step 7. Run the test.
+  - All steps should pass

@@ -1,0 +1,56 @@
+{
+  "id": "026f704f-42a4-4e20-978f-cd4a30ce72e8",
+  "version": "2.0",
+  "name": "Looping",
+  "url": "https://www.tutorialspoint.com/selenium/practice/login.php",
+  "tests": [{
+    "id": "f0aa65ad-072a-4207-bc5d-67134fa4d672",
+    "name": "WhileLoop",
+    "commands": [{
+      "id": "7cd1f4df-f0e9-485e-be5e-93a44b40ce2f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "val"
+    }, {
+      "id": "b062a71c-67e6-4251-bb01-b5815c611b55",
+      "comment": "",
+      "command": "while",
+      "target": "${val} < 3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9479713-3de8-4430-8ae0-429e3f92cd9c",
+      "comment": "",
+      "command": "echo",
+      "target": "${val}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e169e530-3cb6-4845-a54d-67fdf40a5274",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${val} + 1",
+      "targets": [],
+      "value": "val"
+    }, {
+      "id": "eda35ec3-6354-44c3-8d72-2f07de5b1b73",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "314e27cc-5602-45fc-90e2-2a711970b38a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f0aa65ad-072a-4207-bc5d-67134fa4d672"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/login.php"],
+  "plugins": []
+}

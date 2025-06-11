@@ -1,0 +1,52 @@
+Reusing Test Scripts
+========================================
+
+## Scenario
+
+In this test case, let's navigate to http://thedemosite.co.uk/login.php and pass values to the username and password fields. Once the "Failed Login" message appears, we assert the text.
+
+Note: The website provided by the tutorial no longer exists. I used myanimelist.net instead.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+### Create Login Test
+Step 1. Create a new project in Selenium IDE.
+Step 2. Record a simple login test, named "Login", with incorrect credentials.
+Step 3. Assert the title before you stop recording.
+Step 4. Run it to make sure it works.
+
+### Create Variables
+This login function may be tested multiple times for different usernames and passwords.
+Instead of hardcoding a username and password value for the test, we can use variables.
+
+Step 1. Variables are stored in test scripts. Create a new test by clicking on the "+" symbol beside "Tests".
+Step 2. Name the new test "InvalidCrentials".
+Step 3. In the test script editor, in the Command field for the first test step, enter the `store` command.
+Step 4. In the Target field, specify the value you want to store.
+Step 5. In the Value field, give your variable a name.
+Step 6. Do the same for password.
+
+### Reference the Variables
+Step 1. Return to the Login test.
+Step 2. In the test step where the username is entered into the login form, change the Value to `${varName}` and replace "varName" with the name of your variable.
+Step 3. Do the same for password.
+
+### Run the InvalidCrentials Test
+Step 1. Return to the InvalidCrentials test.
+Step 2. Add a `run` command under the `store` commands.
+Step 3. For the run command, enter the name of the login script in the Target field.
+Step 4. Run the test.
+  - The log should say "Running 'Login', called by 'InvalidCrentials'"
+
+### Saving
+- Save the project
+
+----------------------------------------
+
+## How It Works
+
+- The "Login" test case acts as a reusable function that handles login behaviour
+- The "InvalidCredentials" test case assigns specific values to variables and calls the Login test script using the Run command
+- If login functionality changes, you only need to update the Login test case, saving time and effort

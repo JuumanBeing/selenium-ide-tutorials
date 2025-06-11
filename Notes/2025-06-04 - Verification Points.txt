@@ -1,0 +1,17 @@
+Verification Points
+========================================
+
+- Assertion commands can be used to add verification points throughout a test script
+- There are different types of assertions:
+  - `assert`: Verifies that a condition is true. If the condition is false, the test stops immediately
+  - `verify`: Similar to Assert, but if the condition fails, the test continues to run. It logs a failure instead of stopping the test
+  - `wait for`: Pauses the test until a specific condition is met ensuring the application is in the expected state before proceeding
+    - E.g. wait for an element to be visible on the page, so that you can store a value from it or assert that it exists
+
+- While recording, `assert`, `verify`, and `wait for` commands can be inserted by right-clicking an element on the page
+
+----------------------------------------
+
+## Verification Points Tutorial
+
+- See "Verification Points" tutorial

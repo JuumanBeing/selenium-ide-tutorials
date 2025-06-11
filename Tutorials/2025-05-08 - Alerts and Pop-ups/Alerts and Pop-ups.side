@@ -1,0 +1,102 @@
+{
+  "id": "cc402555-1767-4ea0-a85b-e56be6ee9a69",
+  "version": "2.0",
+  "name": "Alerts and Pop-ups",
+  "url": "https://www.tutorialspoint.com/selenium/practice/alerts.php",
+  "tests": [{
+    "id": "7f6e94b8-d528-41f0-8869-fc5ddf8e31ef",
+    "name": "AnswerNextPromptAndAlert",
+    "commands": [{
+      "id": "5b8f294c-af9c-44e7-924f-c627770541dd",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b890ed8-c989-4f99-a270-24db3b9bf93d",
+      "comment": "",
+      "command": "answerOnNextPrompt",
+      "target": "",
+      "targets": [],
+      "value": "Tutorialspoint"
+    }, {
+      "id": "cd61b726-ac4b-4209-a806-20782c6a1a6c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/main/div/div/div[2]/div[4]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8d8bb59-d94d-4e22-8e94-39c60759b7d0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/main/div/div/div[2]/div[1]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "778b9fe8-6eb9-4e81-b3ae-062d7c539f5e",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hello world!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23623f66-c3e0-4a1e-8475-3356ba84752b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7404ec68-1dc5-4177-a1dc-6f3ce7c98af0",
+    "name": "OkNextConfirmation",
+    "commands": [{
+      "id": "56363a70-b67e-4f49-aedd-0d6c17cf1a5d",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14e1a1e0-8414-45cd-aaac-a9585fe3da05",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da3dd5fc-1ae1-4e50-b070-901d5a3b2e3e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/main/div/div/div[2]/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd8788cb-751c-44eb-97d5-7bfc7157a0fb",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"desk\"]",
+      "targets": [],
+      "value": "You pressed OK!"
+    }, {
+      "id": "7949b337-1408-4f0f-87ab-f6d90c4434f6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "78a92b2f-afb3-4f7b-8a2b-885aad862fb7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7f6e94b8-d528-41f0-8869-fc5ddf8e31ef"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/alerts.php"],
+  "plugins": []
+}

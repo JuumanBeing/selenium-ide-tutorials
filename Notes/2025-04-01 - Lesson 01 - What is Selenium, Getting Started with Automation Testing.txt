@@ -1,0 +1,68 @@
+What is Selenium?: Getting Started with Automation Testing
+========================================
+
+## Selenium
+
+- Open source suite of automated testing tools
+- Tests web applications
+- Cannot test desktop and mobile applications
+
+### Advantages
+- Accurate with results thus making it reliable
+- Open-source nature of Selenium makes it free to learn
+- Supports multiple programming languages such as Python, Java, PHP, Perl, and Ruby
+- Supports multiple browsers such as Chrome, Firefox, and Opera
+- Easy to implement and doesn't require the individual to have in-depth knowledge of the tool
+- Has plenty of re-usability and add-ons
+
+### Limitations
+- Since Selenium is open source, it doesn't have a dedicated developer community and therefore doesn't have consistent reliable tech support
+- Cannot test desktop or mobile applications
+- Limited support for image testing
+- Limited support for test management
+  - Often integrated with tools like JUnit and TestNG for this purpose
+- You may need knowledge of programming languages to use Selenium
+
+----------------------------------------
+
+## Selenium IDE
+
+- A browser extension for Firefox or Chrome
+- Automates functionality
+- Typically records user interaction on the browser and exports them as a reusable script
+- A rapid prototyping tool developed to speed up the creation of automation scripts
+- Can be used by individuals with no programming knowledge
+
+### Limitations
+- Does not support data-driven testing
+  - Tests where data is external to your functional tests
+  - Data is loaded into tests
+  - Can run the same test cases with multiple inputs (e.g. login function with different credentials)
+- Can't perform database testing
+- Can't provide a detailed test report
+- Can't export to WebDriver scripts
+- Not recommended for complex scenarios/projects
+- Very limited in its ability to handle JavaScript alerts and pop-ups
+
+----------------------------------------
+
+## Selenium IDE Command-line Runner
+
+- With Selenium IDE command line runner, you can run all of your Selenium IDE tests on any browser, in parallel, and on a Grid without needed to write any code
+- Selenium IDE command line runner needs to be installed separately
+- https://www.selenium.dev/selenium-ide/docs/en/introduction/command-line-runner
+
+----------------------------------------
+
+## Selenium WebDriver
+
+- Cross-platform testing framework
+- Can configure and control browsers on the OS level
+  - This means it can test web apps in different browsers and operating systems without needing separate tools for each combination
+- Serves as a programming interface to create and run test cases
+  - Programming interface: A way to write code that interacts with browsers
+- Interacts natively with browser applications
+  - Communicates directly with the browser, making it faster and more efficient for running tests
+  - Eliminates the need for intermediate servers
+- Supports various programming languages like Python, Java, PHP, Perl, and Ruby
+- Can be integrated with tools like JUnit and TestNG for test management
