@@ -3,7 +3,7 @@ Globbing
 
 ## Scenario
 
-1. Use globbing to assert two different h1 headers on the page
+1. Use globbing to assert two different h1 headers on the page.
 
 ----------------------------------------
 

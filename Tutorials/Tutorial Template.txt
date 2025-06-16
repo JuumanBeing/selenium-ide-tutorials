@@ -1,0 +1,32 @@
+Tutorial Template
+========================================
+
+## Scenario
+
+1.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: [URL].
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step #. Close the browser window.
+  - Command = `close`
+
+Step #. Run the test.
+  - All steps should pass
+
+
+
+Step #. .
+  - Command = ``
+  - Target = ``
+  - Value = ""

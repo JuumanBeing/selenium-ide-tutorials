@@ -1,0 +1,33 @@
+JSON Data File
+========================================
+
+- Selenium IDE can work with JSON data files
+- JSON stands for JavaScript Object Notation
+- JSON is a lightweight data format used for data exchange
+- Its simple, human-readable structure allows machines to quickly parse and generate JSON data
+
+----------------------------------------
+
+## Selenium IDE's `store json` Command
+
+- Selenium IDE uses the `store json` command to work with JSON data files
+- `store json` is an accessory command that stores JSON data in a defined variable
+
+----------------------------------------
+
+## JSON Data File Tutorial
+
+- See "JSON Data File" tutorial
+
+----------------------------------------
+
+## Selenium IDE's .side Files
+
+- You may have noticed from working with Selenium IDE that Selenium IDE project files have a `.side` extension
+- These `.side` files can be opened with an text editor
+- Inside a Selenium IDE `.side` project file, is actually JSON data
+- This JSON file contains data such as:
+  - The project name
+  - Tests
+  - Test steps and their commands, targets, and values
+  - etc.

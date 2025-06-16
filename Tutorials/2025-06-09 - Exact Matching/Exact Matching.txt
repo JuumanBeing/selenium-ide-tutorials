@@ -3,7 +3,7 @@ Exact Matching
 
 ## Scenario
 
-1. Use exact matching to assert two different h1 headers on the page
+1. Use exact matching to assert two different h1 headers on the page.
 
 ----------------------------------------
 
@@ -34,9 +34,3 @@ Step 7. Close the browser window.
 
 Step 8. Run the test.
   - All steps should pass
-
-
-Step #. .
-  - Command = ``
-  - Target = ``
-  - Value = ""

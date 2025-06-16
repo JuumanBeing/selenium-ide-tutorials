@@ -3,9 +3,9 @@ Verification Points
 
 ## Scenario
 
-1. Verify a page title
-2. Click on a link and wait for a state
-3. Then assert that an element is visible after clicking the link
+1. Verify a page title.
+2. Click on a link and wait for a state.
+3. Then assert that an element is visible after clicking the link.
 
 ----------------------------------------
 

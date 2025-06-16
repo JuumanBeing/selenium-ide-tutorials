@@ -1,0 +1,42 @@
+{
+  "id": "deb8f83c-ca45-4f26-ba87-f302d024ad63",
+  "version": "2.0",
+  "name": "JSON Data File",
+  "url": "https://www.tutorialspoint.com/selenium/practice/register.php",
+  "tests": [{
+    "id": "12430d52-6b7d-44f6-8e18-4b777e090b58",
+    "name": "JSONDataFile",
+    "commands": [{
+      "id": "caa62b60-a8a7-4ce3-acd5-5d6ae5f4e2db",
+      "comment": "",
+      "command": "storeJson",
+      "target": "{\"Language\":\"Java\",\"Name\":\"Selenium\"}",
+      "targets": [],
+      "value": "jsonData"
+    }, {
+      "id": "6bc912d8-2446-42e6-b2f9-9107d3e03b84",
+      "comment": "",
+      "command": "echo",
+      "target": "${jsonData}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c73ca305-a20f-47a4-ac31-5b7f8c6b9320",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2efc60be-e046-4ed7-b71e-15fb093e5c6a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["12430d52-6b7d-44f6-8e18-4b777e090b58"]
+  }],
+  "urls": ["https://www.tutorialspoint.com/selenium/practice/register.php"],
+  "plugins": []
+}

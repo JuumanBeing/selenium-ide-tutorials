@@ -1,0 +1,35 @@
+JSON Data File
+========================================
+
+## Scenario
+
+1. Store JSON data into a variable.
+
+----------------------------------------
+
+## Tutorial Instructions
+
+Step 1. Launch Selenium IDE in the browser.
+
+Step 2. Click on "Create a new project". Enter a project name.
+
+Step 3. Set the base URL to: https://www.tutorialspoint.com/selenium/practice/register.php.
+
+Step 4. Open the web page.
+  - Command = `open`
+
+Step 5. Store JSON data in a variable.
+  - Command = `store json`
+  - Target = `{"Language":"Java","Name":"Selenium"}`
+  - Value = "jsonData"
+
+Step 6. Echo the JSON data in the Log panel.
+  - Command = `echo`
+  - Target = `${jsonData}`
+
+Step 7. Close the browser window.
+  - Command = `close`
+
+Step 8. Run the test.
+  - All steps should pass
+  - The Log should display "echo: [object Object]"
