@@ -23,7 +23,7 @@ Pattern Matching
   - `assert selected label`
   - etc.
 
-- The different wants of pattern matching include:
+- The different ways of pattern matching include:
   - Globbing
   - Regular expressions
   - Exact matching
@@ -41,17 +41,17 @@ Pattern Matching
 - Globbing is case sensitive
 
 - In selenium IDE, globbing can be used in several ways:
-  - `*` matches any number of characters (zero or more characters)
+  - `*` represents any number of characters (zero or more characters)
     - E.g. `*.jpg` matches any filename that ends in `.jpg`
       - Matches: `image.jpg`, `photo.jpg`, `holiday2023.jpg`
       - Does NOT match: `image.jpeg`, `image.png`
 
-  - `?` matches exactly one character
+  - `?` represents exactly one character
     - E.g. `file?.txt` matches any filename is named `file`anyCharacter`.txt`
       - Matches: `file1.txt`, `fileA.txt`
       - Does NOT match: `file10.txt`, `file.txt`
 
-  - `[]` defines a character class and matches any one character within the brackets
+  - `[]` defines a character class and represents any one character within the brackets
     - E.g. `[0-9]` matches any digit
     - E.g. `file[a-c].txt`
       - Matches: `filea.txt`, `fileb.txt`, `filec.txt`
@@ -83,3 +83,21 @@ Pattern Matching
 ----------------------------------------
 
 ## Regular Expressions
+
+- A regular expression (usually abbreviated to RegEx) is a powerful and flexible tool used for matching strings of text
+- It is a sequence of characters that defines a search pattern
+- Regular expressions can be both simple or complex
+  - Simple: Searching for a specific word
+  - Complex: Validating email addresses or phone numbers
+- Special characters are used to represent patterns, just like the `*`, `?`, and `[]` in globbing and more
+
+- Globbing and exact matching are actually subsets of regular expressions
+  - They are limited forms of pattern matching
+- Anything that can be done using globbing or exact matching can be done by regular expressions
+
+- Selenium IDE supports the full set of RegEx patterns that are available in JavaScript
+  - Not limited by simpler patternings using `*`, `?`, and `[]` used in globbing
+
+- To use regular expressions in Selenium IDE, you must prefix the pattern with either `regexp:` or `regexpi:`
+- `regexp:` is case sensitive
+- `regexpi:` is case insensitive

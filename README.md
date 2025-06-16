@@ -6,7 +6,7 @@ Learning Selenium IDE with online tutorials.
 The purpose of this project is to learn QA automation concepts without code so that I can focus on fundamentals rather than get caught up with syntax. This is not meant to in-depth learning as Selenium IDE, the record and play tool, is not industry standard and not a highly sought skill from employers.
 
 ### Folders
-**Notes**: Notes I took when studying concepts.
+**Notes**: Notes I took while studying concepts.
 
 **Project**: Small projects I undertook at various points throughout the set of tutorials.
 
@@ -34,6 +34,7 @@ The purpose of this project is to learn QA automation concepts without code so t
 - Will need do more in-depth learning for element locating strategies and when to use them
 - Depending on what is being asserted, test scripts can be brittle
   - Need to assert something that is stable (doesn't constantly change) and unique
+- For dynamic content, some pattern matching strategies that can be used are globbing and regular expressions
 - Test scripts need to consider load times and states otherwise tests can be flaky (produce inconsistent results)
   - Wait for states before asserting/verifying
 - Need to learn best practices for writing automation scripts
