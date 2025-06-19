@@ -1,0 +1,263 @@
+{
+  "id": "2591c597-27fe-42e5-855e-360b1a07b502",
+  "version": "2.0",
+  "name": "Selenium IDE Basics",
+  "url": "https://the-internet.herokuapp.com/",
+  "tests": [{
+    "id": "de4a92d4-cd02-4045-8084-fadf90882934",
+    "name": "JavaScriptAlerts",
+    "commands": [{
+      "id": "a83af095-9278-47c4-8e41-aeb87586abaa",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b1a3d34-f5e4-4d65-8793-1915727ad2a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=JavaScript Alerts",
+      "targets": [
+        ["linkText=JavaScript Alerts", "linkText"],
+        ["css=li:nth-child(29) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'JavaScript Alerts')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li[29]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/javascript_alerts')]", "xpath:href"],
+        ["xpath=//li[29]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JavaScript Alerts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f7f3d27-6173-4f78-ba65-f6a09b6d2512",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5974309e-18de-4bbf-8399-aa040953a498",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > button",
+      "targets": [
+        ["css=li:nth-child(1) > button", "css:finder"],
+        ["xpath=//button[@onclick='jsAlert()']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Click for JS Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7150d42a-dc75-4d58-8344-75fe03dff617",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [
+        ["id=result", "id"],
+        ["css=#result", "css:finder"],
+        ["xpath=//p[@id='result']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'You successfully clicked an alert')]", "xpath:innerText"]
+      ],
+      "value": "You successfully clicked an alert"
+    }, {
+      "id": "10face5f-51ef-4624-870f-f7fdaf658888",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a84cd263-f03b-4df1-8f61-2011bca1ca77",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14684d0e-dcf3-4e40-bbb1-c3e59e693a65",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "You clicked: Ok"
+    }, {
+      "id": "0a18fa33-2fe0-45f9-91c0-9c45fe28487a",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa75556c-545a-4c0b-95ca-d9c50ba04d6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) > button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0334d90-d9aa-4dfb-92f6-5ff3b7900d20",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=result",
+      "targets": [],
+      "value": "You clicked: Cancel"
+    }]
+  }, {
+    "id": "74a716ac-8c12-49bd-b5fd-6860324f09e7",
+    "name": "ClickLinks",
+    "commands": [{
+      "id": "2884c167-98d5-451d-94de-0af81d144257",
+      "comment": "",
+      "command": "//// Click through all links on the page",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccdec528-50ce-4211-a9d7-47704534a805",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4070d8c-42b9-4b0e-ac59-a8ba1847ca3d",
+      "comment": "",
+      "command": "//// Count the # of <a> inside the list of links",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e96261a9-b9ed-456c-a7a6-4d4709bbdb6c",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='content']/ul/li/a",
+      "targets": [],
+      "value": "linkCount"
+    }, {
+      "id": "759708ea-46ff-44db-8f37-30d789ae4042",
+      "comment": "",
+      "command": "//// Set current link number to 1",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69f7edcb-c148-4e50-9672-c69633d4c5c4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "currentLink"
+    }, {
+      "id": "cafc44e4-7e20-4075-8eb6-b33f3feca49d",
+      "comment": "",
+      "command": "while",
+      "target": "${currentLink} <= ${linkCount}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "368e700a-d52a-4aa9-b0c2-f52182e15f1a",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=li:nth-child(${currentLink}) > a",
+      "targets": [],
+      "value": "currentLinkText"
+    }, {
+      "id": "997761ab-5267-4f87-b7e0-0560030e39d3",
+      "comment": "",
+      "command": "echo",
+      "target": "Current Link: ${currentLink}. ${currentLinkText}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52708288-c99d-41ec-a1a5-d49b2de4fe1c",
+      "comment": "",
+      "command": "//// Skip browser HTTP authentication prompts bc Selenium IDE cannot interact with it",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b8e91b2-5e5a-4fab-a7c5-26021f38b756",
+      "comment": "",
+      "command": "if",
+      "target": "${currentLink} == 3 || ${currentLink} == 8 || ${currentLink} == 37",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b015be6-73da-4cc0-8c98-5276684cf175",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${currentLink}+1",
+      "targets": [],
+      "value": "currentLink"
+    }, {
+      "id": "f50b76f9-66ca-4415-8bbe-6ce8ce78cfca",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "235e5d17-705d-4e2f-8687-51b164497801",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(${currentLink}) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98e94651-dac7-4713-aec3-f72eff728103",
+      "comment": "",
+      "command": "//// assertElementPresent",
+      "target": "css=h3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8231310-abe7-4e5c-9dc7-ea1aa2e88c3c",
+      "comment": "",
+      "command": "//// assertElementNotPresent",
+      "target": "css=h1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "244b04bb-b596-4e40-a6e8-f85db75cc22c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "history.back()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc5d5a17-6dc7-49e2-9b89-0118797266c1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${currentLink}+1",
+      "targets": [],
+      "value": "currentLink"
+    }, {
+      "id": "2799228b-7685-49e9-9ad8-b34409dee597",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c08b89f-f626-4efe-bbec-e194645c0a1c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e1235a34-4eb1-4cd2-92a1-0db913b025c3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}
