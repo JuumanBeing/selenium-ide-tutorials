@@ -8,7 +8,7 @@ The purpose of this project is to learn QA automation concepts without code so t
 ### Folders
 **Notes**: Notes I took while studying concepts.
 
-**Project**: Small projects I undertook at various points throughout the set of tutorials.
+**Project**: A small project I undertook to practise the basics.
 
 **Tutorials**: Tutorial instructions and files.
 
